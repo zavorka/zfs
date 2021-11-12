@@ -47,6 +47,8 @@
 #if defined(__x86_64__) && defined(HAVE_AVX) && \
     defined(HAVE_AES) && defined(HAVE_PCLMULQDQ)
 
+.cfi_sections .debug_frame
+
 .extern gcm_avx_can_use_movbe
 
 .text
